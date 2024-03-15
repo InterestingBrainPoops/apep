@@ -39,7 +39,7 @@ async fn main() {
         .expect("PORT Environment Variable not set")
         .parse()
         .expect("PORT is not a valid port number");
-    println!("Running on {port}");
+    println!("Running on {port}!");
     warp::serve(routes).run(([0, 0, 0, 0], port)).await;
     
 }

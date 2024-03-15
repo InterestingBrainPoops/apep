@@ -35,7 +35,7 @@ async fn main() {
         .or(start)
         .or(end)
         .or(get_move);
-    let port = std::env::var("PORT")
+    let port = std::env::var("OPEN_PORT")
         .expect("PORT Environment Variable not set")
         .parse()
         .expect("PORT is not a valid port number");
